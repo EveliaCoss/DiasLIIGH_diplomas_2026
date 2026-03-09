@@ -1,0 +1,31 @@
+---
+title: ''
+output: 
+  pdf_document:
+    includes:
+      in_header: participacion/header.tex
+latex_engine: xelatex
+classoption: landscape
+header-includes:
+- \renewcommand{\familydefault}{\sfdefault}
+---
+
+<!-- Template de VieRnes de Bioinformatica -->
+
+<!-- Elimina la numeración de páginas (no se muestran números). -->
+\pagenumbering{gobble}
+
+<!-- Cuerpo del diploma -->
+\begin{center}
+
+%  Añade espacio vertical al inicio, bajando el texto hacia el centro de la hoja.
+\topskip130pt
+
+% Muestra el nombre del asistente en fuente grande (30pt), con interlineado de 72pt, en negritas.
+%  Salto de línea con espacio adicional de 80pt.
+  \hspace*{-10cm}{\fontsize{25}{72}\selectfont \bfseries <<ATTENDEE_NAME>>} \\[77pt]
+  
+% Muestra la participación (ej. “Ponente”, “Asistente”) en el mismo estilo tipográfico.
+  \hspace*{-8cm}{\fontsize{25}{72}\selectfont \bfseries <<PARTICIPATION>>} 
+
+\end{center}

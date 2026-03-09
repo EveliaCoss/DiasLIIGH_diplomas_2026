@@ -1,0 +1,41 @@
+---
+title: ''
+output: 
+  pdf_document:
+    includes:
+      in_header: ganadores/header.tex
+latex_engine: xelatex
+classoption: landscape
+header-includes:
+- \renewcommand{\familydefault}{\sfdefault}
+---
+
+
+<!-- Template de VieRnes de Bioinformatica -->
+
+<!-- Elimina la numeración de páginas (no se muestran números). -->
+\pagenumbering{gobble}
+
+<!-- Cuerpo del diploma -->
+\begin{center}
+
+%  Añade espacio vertical al inicio, bajando el texto hacia el centro de la hoja.
+\topskip130pt
+
+% Muestra el nombre del asistente en fuente grande (30pt), con interlineado de 72pt, en negritas.
+%  Salto de línea con espacio adicional de 80pt.
+  \hspace*{-10cm}{\fontsize{25}{72}\selectfont \bfseries \phantom{Nombre}} \\[77pt]
+  
+% Lugar (1er, 2do, 3er lugar) 
+{\fontsize{25}{72}\selectfont \bfseries <<PLACE>>} \\[28pt] 
+
+\definecolor{fondoclaro}{RGB}{227,230,230} 
+
+% Muestra la participación (ej. “Licenciatura”, “Posgrado”) en el mismo estilo tipográfico.
+\begin{tcolorbox}[colback=fondoclaro, colframe=fondoclaro, width=\textwidth, halign=center]
+{\fontsize{18}{72}\selectfont \bfseries <<PARTICIPATION>>}
+\end{tcolorbox}
+
+% Tipo de participación (Presentación oral / Cartel) 
+
+\end{center}
